@@ -18,8 +18,8 @@ function SongList() {
     <Box
       sx={{
         maxWidth: "100%",
-        maxHeight: "50vh",
-        padding: "10px",
+        height: "100%",
+        padding: { md: "0px 10px 0px 10px", sm: "10px 0px 10px 0px" },
         borderRadius: "10px",
       }}
     >
@@ -33,7 +33,7 @@ function SongList() {
         container
         direction={"row"}
         justifyContent={"center"}
-        alignItems="flex-start"
+        // alignItems="stretch"
       >
         {songArr.map((obj, ind) => {
           //   console.log(ind);

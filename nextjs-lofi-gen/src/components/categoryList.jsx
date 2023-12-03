@@ -6,7 +6,7 @@ function CategoryList() {
     <Grid container sx={{ width: "100%", height: "100%" }}>
       {category_arr.map((obj, idx) => {
         return (
-          <Grid key={idx} item xs={3} sx={{ padding: "10px" }}>
+          <Grid key={idx} item xs={12} md={3} sx={{ padding: "10px" }}>
             <Button
               variant="contained"
               fullWidth

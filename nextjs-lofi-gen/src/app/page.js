@@ -7,8 +7,13 @@ import Image from "next/image";
 export default function Home() {
   return (
     // <main className="flex min-h-screen flex-col items-center justify-between p-24">
-    <Grid container direction={"column"} sx={{ height: "100%", width: "100%" }}>
-      <Grid container alignItems={"flex-end"} item xs={3} p={2}>
+    <Grid
+      container
+      // direction={"column"}
+      alignItems={"stretch"}
+      sx={{ minHeight: "100vh", width: "100vw" }}
+    >
+      <Grid container alignItems={"flex-end"} item xs={12} p={2}>
         <Grid
           item
           container
@@ -21,13 +26,15 @@ export default function Home() {
           </Typography>
         </Grid>
       </Grid>
+
       <Grid
         container
         direction={"row"}
         item
         justifyContent={"center"}
-        alignItems={"center"}
-        xs
+        alignItems={"stretch"}
+        xs={12}
+        sx={{ padding: "0px 20px 0px 20px" }}
       >
         <Grid
           item
@@ -35,18 +42,25 @@ export default function Home() {
           // src={"/milky_way.jpg"}
           style={{
             maxWidth: "95%",
-            height: "95%",
+            // maxHeight: "50vh",
+
             backgroundImage: 'url("/milky_way.jpg")',
             borderRadius: "10px",
             padding: "30px",
           }}
+          sx={{ maxHeight: "45vh" }}
           sm={12}
           md={6}
           container
           justifyContent={"flex-start"}
           alignItems={"flex-end"}
         >
-          <Grid container justifyContent={"space-between"}>
+          <Grid
+            container
+            justifyContent={"space-between"}
+            alignItems={"flex-end"}
+            sx={{ width: "100%", height: "100%" }}
+          >
             <Grid item xs>
               <Typography variant="h3">Lofi</Typography>
               <Typography>Playlist</Typography>
@@ -64,14 +78,26 @@ export default function Home() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item container sm={12} md={6}>
+        <Grid
+          item
+          container
+          // component={"div"}
+          sm={12}
+          md={6}
+          sx={{
+            maxHeight: "45vh",
+            padding: { md: "0px 20px 0px 20px", sm: "0px" },
+          }}
+          // alignItems={"stretch"}
+          justifyContent={"center"}
+        >
           <SongList />
         </Grid>
       </Grid>
 
       <Grid
         item
-        xs={3}
+        xs={12}
         direction={"row"}
         container
         justifyContent={"center"}
