@@ -13,14 +13,6 @@ import {
 import { styled } from "@mui/material/styles";
 import React from "react";
 
-// const Item = styled(Paper)(({ theme }) => ({
-//   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-//   ...theme.typography.body2,
-//   padding: theme.spacing(1),
-//   textAlign: "center",
-//   color: theme.palette.text.secondary,
-// }));
-
 function SongList() {
   return (
     <Box
@@ -37,7 +29,6 @@ function SongList() {
           height: "100%",
           overflowX: "hidden",
           overflowY: "scroll",
-          //   padding: "10px 0px 10px 0px",
         }}
         container
         direction={"row"}
@@ -45,8 +36,8 @@ function SongList() {
         alignItems="flex-start"
       >
         {songArr.map((obj, ind) => {
-          console.log(ind);
-          console.log(obj);
+          //   console.log(ind);
+          //   console.log(obj);
           return (
             <Card
               key={ind}
@@ -61,15 +52,10 @@ function SongList() {
               <CardMedia
                 component={"img"}
                 sx={{ width: 150 }}
-                // image="milky_way.jpg"
                 image={obj.img}
               />
               <Grid
                 container
-                // sx={{
-                //   display: "flex",
-                //   flexDirection: "column",
-                // }}
                 justifyContent={"space-between"}
                 alignItems={"center"}
               >

@@ -17,30 +17,6 @@ function CategoryList() {
           </Grid>
         );
       })}
-      {/* <Grid item xs={3} sx={{ padding: "10px" }}>
-        <Button
-          variant="contained"
-          fullWidth
-          sx={{ height: "100%", backgroundColor: "rgba(255,255,255,.1)" }}
-        >
-          Category 1
-        </Button>
-      </Grid>
-      <Grid item xs={3} sx={{ padding: "10px" }}>
-        <Button variant="contained" fullWidth sx={{ height: "100%" }}>
-          Category 1
-        </Button>
-      </Grid>
-      <Grid item xs={3} sx={{ padding: "10px" }}>
-        <Button variant="contained" fullWidth sx={{ height: "100%" }}>
-          Category 1
-        </Button>
-      </Grid>
-      <Grid item xs={3} sx={{ padding: "10px" }}>
-        <Button variant="contained" fullWidth sx={{ height: "100%" }}>
-          Category 1
-        </Button>
-      </Grid> */}
     </Grid>
   );
 }
